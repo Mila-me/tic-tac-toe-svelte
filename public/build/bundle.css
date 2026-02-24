@@ -1,2 +1,57 @@
-ul.svelte-1m5evbw{list-style-type:none;padding-left:0}
-.board.svelte-vba4j0{display:grid;grid-template-columns:60px 60px 60px;gap:5px;pointer-events:none}.activePE.svelte-vba4j0{pointer-events:all !important}.cell.svelte-vba4j0{width:60px;height:60px;display:flex;align-items:center;justify-content:center;border:1px solid black;font-size:28px}
+
+    ul.svelte-qtlrn {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+
+  .board.svelte-7v5t9r {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 5px;
+    margin-bottom: 20px;
+    /* Plansza jest nieaktywna, dopóki activePE nie jest true */
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .board.activePE.svelte-7v5t9r {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .cell.svelte-7v5t9r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .cell.svelte-7v5t9r:hover:not(:disabled) {
+    background-color: #f0f0f0;
+  }
+
+  .cell.svelte-7v5t9r:disabled {
+    cursor: not-allowed;
+    color: #555;
+  }
+
+  .players.svelte-7v5t9r {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  input.svelte-7v5t9r {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+  }
+
