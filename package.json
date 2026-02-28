@@ -25,7 +25,7 @@
     "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.1.2",
-    "svelte": "^5.51.5"
+    "svelte": "^5.53.6"
   },
   "dependencies": {
     "braces": ">=3.0.3",
